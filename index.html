@@ -1,0 +1,333 @@
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>WebVR</title>
+
+		<meta name="description" content="HelloJoker 2016 : WebVR">
+		<meta name="author" content="Marwen Doukh">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/reveal.css">
+
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+<script src="https://aframe.io/releases/0.3.2/aframe.min.js"></script>
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+
+	<body>
+
+		<div class="reveal" style="background-color: #00695c;">
+
+			<div class="slides">
+
+
+				<!-- First slide -->
+
+				<section  >
+					<h2><font color="black">WebVR</font></h2>
+					<p>
+						<small></small>
+						<br/><br/><br/><br/><br/>
+						<footer>
+							<p><font size="5" color="white">Marwen Doukh - HelloJoker 2016</font> </p>
+							<p>14-12-2016</p>
+						</footer>
+
+					</p>
+				</section>
+
+				<!-- Slide 2 Agenda-->
+
+				<section>
+					<h2><font color="black">Agenda</font></h2>
+					<br/><br/>
+					<ul>
+					<li><p><font color="white">VR</font></p></li>
+					<li><p><font color="white">Hardware needed</font></p></li>
+					<li><p><font color="white">Mozilla + VR</font></p></li>
+					</ul>
+
+				</section>
+
+		    	<!-- Slide 3  -->
+
+
+
+				<section>
+						<h2><font color="black">What is VR ?</font></h2>
+						<br/><br/>
+						<p><font color="white">
+							 immersive experience
+								</font>
+						</p>
+
+					</section>
+
+
+
+					<!-- Slide 4 :  -->
+
+
+
+				<section>
+						<h2><font color="black">Applications</font></h2>
+
+						<br/>
+
+					<ul>
+						<li>Gaming</li>
+						<br/>
+						<li>Architectural design</li>
+						<br/>
+						<li>Marketing</li>
+					</ul>
+
+					</section>
+
+
+					<!-- Slide 5 :  -->
+
+
+					<section >
+					<h2>We need a headset</h2>
+					</section>
+
+
+				<!-- Slide 6 :  -->
+
+
+					<section >
+						<h2>HTC vive<h2>
+						<img  src="./img/htcvive.png" width="300px" max-height="300px"/>
+
+					</section>
+
+					<!-- Slide 7 :  -->
+
+
+					<section >
+						<h2>Oculus rift<h2>
+						<img  src="./img/oculusrift.png" width="300px" max-height="300px"/>
+
+					</section>
+
+						<!-- Slide 8 :  -->
+
+
+					<section >
+						  	<h2>Google Cardboard<h2>
+								<img  src="./img/googlecardboard.png" width="300px" max-height="300px"/>
+
+							</section>
+
+
+							<!-- Slide 9  -->
+
+
+							<section >
+										<h2>VR Box<h2>
+										<img  src="./img/vrbox.png" width="300px" max-height="300px"/>
+
+									</section>
+
+									<!-- Slide 10 :  -->
+
+
+									<section >
+
+														<h2>Let's talk about something cool !</h2>
+											</section>
+
+								<!-- Slide 11 :  -->
+
+
+								<section >
+
+											<img  src="./img/firefox.png" width="150px" max-height="150px"/>
+												<h2>+<h2>
+													<h2>Aframe</h2>
+										</section>
+
+									<!-- Slide 12  -->
+
+
+										<section >
+											<h1>Demo</h1>
+											<a-scene>
+
+	      <a-sphere position="0 1.25 -1" radius="1.25" color="#EF2D5E"></a-sphere>
+	      <a-box position="-1 0.5 1" rotation="0 45 0" width="1" height="1" depth="1"  color="#4CC3D9"></a-box>
+	      <a-cylinder position="1 0.75 1" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+	      <a-plane rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+
+	      <a-sky color="#ECECEC"></a-sky>
+	      <a-entity position="0 0 3.8">
+	        <a-camera></a-camera>
+	      </a-entity>
+	</a-scene>
+										</section>
+
+										<!-- Slide 13 :  -->
+
+
+											<section >
+
+
+												<pre><code data-trim contenteditable class="hljs html">
+												&lt;a-scene&gt;
+
+						&lt;a-sphere position="0 1.25 -1" radius="1.25" color="#EF2D5E"&gt;  &lt;/a-sphere&gt;
+						&lt;a-box position="-1 0.5 1" rotation="0 45 0" width="1" height="1" depth="1"  color="#4CC3D9"/&gt;  &lt;/a-box&gt;
+						&lt;a-cylinder position="1 0.75 1" radius="0.5" height="1.5" color="#FFC65D"&gt;  &lt;/a-cylinder&gt;
+
+
+						&lt;a-plane rotation="-90 0 0" width="4" height="4" color="#7BC8A4"&gt;  &lt;/a-plane&gt;
+						&lt;a-sky color="#ECECEC"&gt;  &lt;/a-sky&gt;
+
+
+						&lt;a-entity position="0 0 3.8"&gt;
+							&lt;a-camera&gt;  &lt;/a-camera&gt;
+						&lt;/a-entity&gt;
+				&lt;/a-scene&gt;
+			                        </code></pre>
+											</section>
+
+
+										<!-- Slide 14 :  -->
+
+
+											<section >
+
+												<h3>Other primitive forms</h3>
+												<ul>
+                            <li>&lt;a-box&gt;</li>
+                            <li>&lt;a-camera&gt;</li>
+                            <li>&lt;a-circle&gt;</li>
+                            <li>&lt;a-collada-model&gt;</li>
+                            <li>&lt;a-cone&gt;</li>
+                            <li>&lt;a-cursor&gt;</li>
+                            <li>&lt;a-curvedimage&gt;</li>
+                            <li>&lt;a-cylinder&gt;</li>
+                            <li>&lt;a-dodecahedron&gt;</li>
+                            <li>&lt;a-image&gt;</li>
+                            <li>&lt;a-light&gt;</li>
+                        </ul>
+
+											</section>
+
+											<!-- Slide 15 :  -->
+
+
+												<section >
+
+													<h3>3D models</h3>
+													<a-scene>
+												       <a-assets>
+												         <a-asset-item id="tree" src="3dmodels/man.dae"></a-asset-item>
+												       </a-assets>
+
+												       <a-collada-model src="#tree" rotation="0 0 0"></a-collada-model>
+												       <a-sky color="#ECECEC"></a-sky>
+
+															 <a-entity position="0 0 3.8">
+																<a-camera></a-camera>
+															</a-entity>
+												 </a-scene>
+
+
+												</section>
+
+												<!-- Slide 16 :  -->
+
+
+													<section >
+
+														<h2>Find more examples here</h2>
+														<h3>www.aframe.io<h3>
+
+													</section>
+
+
+
+
+																	<!-- Slide 19 :  -->
+
+
+																		<section >
+
+																			<h3>Thank you for paying attention<h3>
+
+																		</section>
+
+																		<!-- Slide 20 :  -->
+
+
+																			<section >
+																				<h2><font color="black">Useful links</font></h2>
+
+																					<p>aframe.io</p>
+																					<p>mozvr.com</p>
+																					<p>turbosquid.com</p>
+																					<p>clara.io</p>
+
+
+																			</section>
+
+
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				width: "100%",
+	 			height: "100%",
+
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
